@@ -234,3 +234,31 @@ package-lock.json
 *.cache
 *.bak
 *.orig
+
+# SDK extracts (use system headers directly)
+idaw_extract_*
+*_extract_*
+
+# Source maps (generated)
+*.map
+!*.md.map
+
+# Bundled/minified JavaScript (build artifacts)
+*.min.js
+*.bundle.js
+index.*.js
+index_*.js
+typescript*.js
+typescript*.mjs
+rollup*.js
+babel.js
+axe.js
+react-dom.development*.js
+StreamlitSyntaxHighlighter*.js
+embed.*.js
+archive_*.js
+
+# Large vendor type definitions (install via npm)
+lib.dom.d.ts
+lucide-react.d.ts
+dynamicIconImports.d.ts
