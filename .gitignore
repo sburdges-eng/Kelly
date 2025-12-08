@@ -265,3 +265,7 @@ dynamicIconImports.d.ts
 code/python/
 code/python/
 data/xml/
+docs/markdown/
+docs/txt/
+docs/html/
+code/
