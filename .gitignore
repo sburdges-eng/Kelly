@@ -263,3 +263,5 @@ lib.dom.d.ts
 lucide-react.d.ts
 dynamicIconImports.d.ts
 code/python/
+code/python/
+data/xml/
