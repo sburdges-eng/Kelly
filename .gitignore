@@ -168,3 +168,69 @@ $RECYCLE.BIN/
 *.msp
 *.lnk
 _codeql_detected_source_root
+
+# Large binary files (use Git LFS or external storage)
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.pkg
+*.deb
+*.dmg
+*.iso
+
+# Images (store externally)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.psd
+*.xcf
+!assets/icons/*.png
+!docs/images/*.png
+
+# Node native binaries
+*.node
+
+# Lock files (regenerate locally)
+yarn.lock
+package-lock.json
+*.lock
+!flake.lock
+
+# ML/AI models (use Git LFS or cloud storage)
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.h5
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.wavetable
+
+# Video files
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+
+# Compiled docs (track source only)
+*.pdf
+*.docx
+*.pptx
+*.xlsx
+!docs/specs/*.pdf
+
+# Temporary and cache
+*.tmp
+*.temp
+*.cache
+*.bak
+*.orig
