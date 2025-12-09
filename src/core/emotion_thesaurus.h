@@ -1,5 +1,6 @@
 #pragma once
 
+#include <array>
 #include <string>
 
 namespace kelly {
@@ -20,7 +21,7 @@ public:
 
 private:
     void initializeThesaurus();
-    // Storage for 216 nodes
+    std::array<EmotionThesaurusNode, 216> nodes_;
 };
 
 } // namespace kelly
