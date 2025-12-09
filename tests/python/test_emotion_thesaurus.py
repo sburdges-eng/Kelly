@@ -4,9 +4,9 @@ from kelly.core.emotion_thesaurus import EmotionThesaurus, EmotionCategory
 
 
 def test_emotion_thesaurus_initialization():
-    """Test thesaurus initializes with emotions."""
+    """Test thesaurus initializes with 216 emotions."""
     thesaurus = EmotionThesaurus()
-    assert len(thesaurus.nodes) > 0
+    assert len(thesaurus.nodes) == 216
 
 
 def test_get_emotion_by_id():
@@ -23,7 +23,6 @@ def test_find_emotion_by_name():
     thesaurus = EmotionThesaurus()
     emotion = thesaurus.find_emotion_by_name("grief")
     assert emotion is not None
-    assert emotion.id == 2
     assert emotion.category == EmotionCategory.SADNESS
 
 

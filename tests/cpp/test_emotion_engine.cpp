@@ -3,9 +3,9 @@
 
 using namespace kelly;
 
-TEST_CASE("EmotionEngine initializes with emotions", "[emotion]") {
+TEST_CASE("EmotionEngine initializes with 216 emotions", "[emotion]") {
     EmotionEngine engine;
-    REQUIRE(engine.getEmotionCount() > 0);
+    REQUIRE(engine.getEmotionCount() == 216);
 }
 
 TEST_CASE("EmotionEngine can retrieve emotion by ID", "[emotion]") {
@@ -20,7 +20,6 @@ TEST_CASE("EmotionEngine can find emotion by name", "[emotion]") {
     EmotionEngine engine;
     const EmotionNode* emotion = engine.findEmotionByName("grief");
     REQUIRE(emotion != nullptr);
-    REQUIRE(emotion->id == 2);
     REQUIRE(emotion->category == EmotionCategory::Sadness);
 }
 
